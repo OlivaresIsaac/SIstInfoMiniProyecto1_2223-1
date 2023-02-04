@@ -6,3 +6,11 @@ function highLightLastNavBarButton(id){
     }, 2000);
 }
 
+function showResponsiveNavBar(){
+    let navbar = document.getElementById("navbar");
+    if (navbar.className === "navbar-div") {
+        navbar.className += " responsive";
+    } else {
+        navbar.className = "navbar-div";
+    }
+}

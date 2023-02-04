@@ -8,17 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>IsaacOlivaresCV</title>
 </head>
 <body>
 
-    <div class="navbar-div">
-        <a class="home-navbar" href="#home" id="homeNavButton" onclick="highLightLastNavBarButton(this.id)">Bienvenido</a>
+    <div class="navbar-div" id="navbar">
+        <a href="#home" id="homeNavButton" onclick="highLightLastNavBarButton(this.id)">Bienvenido</a>
         <a href="#experience" id="experienceNavButton" onclick="highLightLastNavBarButton(this.id)">Experiencia</a>
         <a href="#about" id="aboutNavButton" onclick="highLightLastNavBarButton(this.id)">Sobre mi</a>
         <a href="#skills" id="skillsNavButon" onclick="highLightLastNavBarButton(this.id)">Habilidades</a>
         <a href="#contact" id="contactNavButton" onclick="highLightLastNavBarButton(this.id)">Contacto</a>
-       
+        <a href="javascript:void(0);" class="menu-icon" onclick="showResponsiveNavBar()">
+            <i class="fa fa-bars"></i>
+          </a>
     </div>  
 
     <div class="main-section-div" id="home">
