@@ -1,6 +1,5 @@
 function highLightLastNavBarButton(id){
-    document.getElementById(id).classList.add('active')
-    // contactNavButton.classList.remove("active")
+    document.getElementById(id).classList.add('active') 
     setTimeout(() => {
         document.getElementById(id).classList.remove('active')
     }, 2000);
