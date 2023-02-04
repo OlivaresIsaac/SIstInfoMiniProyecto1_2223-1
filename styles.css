@@ -191,6 +191,7 @@ body {
 .title{
     font-size: 1.5rem;
     text-align: center;
+    padding: 1rem;
 }
 
 .project-div{
@@ -198,6 +199,11 @@ body {
     background-color: rgb(180, 221, 255);
     padding: 0.3rem;
     flex-direction: column;
+
+}
+
+.project-div2{
+    background-color: rgb(80, 253, 132);
 }
 .tecnologies-div{
     display: flex;
@@ -207,6 +213,13 @@ body {
 
 .logo{
     height: 2rem;
+    padding: .1rem;
+}
+
+.project-img{
+    width: 80%;
+    height: auto;
+    align-self: center;
 }
 /* 
 
