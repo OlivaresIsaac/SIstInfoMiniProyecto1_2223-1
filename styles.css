@@ -71,7 +71,7 @@ body {
 }
 
 .main-section-odd{
-    background-color: #32014e;
+    background-color: #71408d;
 }
 
 .navbar-div a {
@@ -203,12 +203,16 @@ body {
 }
 
 .project-div2{
-    background-color: rgb(80, 253, 132);
+    background-color: rgb(167, 255, 193);
+}
+.project-div3{
+    background-color: rgba(225, 180, 252, 0.932)
 }
 .tecnologies-div{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
 }
 
 .logo{
@@ -218,6 +222,11 @@ body {
 
 .project-img{
     width: 80%;
+    height: auto;
+    align-self: center;
+}
+.mental-mending-img{
+    width: 50%;
     height: auto;
     align-self: center;
 }
