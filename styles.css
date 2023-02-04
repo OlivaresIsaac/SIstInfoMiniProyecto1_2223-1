@@ -32,7 +32,13 @@ body {
 .black-bold {
     color: #000000;
     font-weight: 700;
-    font-style: normal;
+
+}
+
+.black-light {
+    color: #000000;
+    font-weight: 444;
+
 }
 
 
@@ -53,10 +59,14 @@ body {
 }
 
 .main-section-div{
-    height: 15rem;
+    /* height: 10rem; */
     padding-top: 1.1rem;
     width: 100%;
     background-color: rgb(225, 227, 255);
+}
+
+.main-section-odd{
+    background-color: #32014e;
 }
 
 .navbar-div a {
@@ -163,7 +173,15 @@ body {
     flex-direction: row;
     padding-left: 2rem;
     padding-right: 2rem;
+    font-size: .5rem;
+    padding-bottom: .4rem;
   }
+
+.intro-div{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
 
 /* 
 

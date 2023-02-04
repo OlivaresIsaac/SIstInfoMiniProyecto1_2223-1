@@ -5,6 +5,7 @@ let currentSlideIndex = 0
 
 addSlidesIntoHero()
 nextSlide(0)
+setInterval(nextSlide, 10000, 1)
 
 function addSlidesIntoHero(){
     // assets\hero2.jpg
@@ -12,7 +13,7 @@ function addSlidesIntoHero(){
         slideHtml = `
         <div class="slides">
         <img class="responsive-img fade" src="assets/hero${i}.jpg" >
-        <div class="caption-div black-bold">
+        <div class="caption-div white-bold">
         <div >${slideCaptions[i-1]}</div>
         <div >${i}/4</div>
         </div>
