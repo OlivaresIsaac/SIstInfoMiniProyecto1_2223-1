@@ -37,8 +37,13 @@ body {
 
 .black-light {
     color: #000000;
-    font-weight: 444;
-
+    font-weight: 400;
+}
+.normal-black{
+    font-size: 0.5rem;
+    font-weight: 100;
+    text-align: justify;
+    padding: 1rem;
 }
 
 
@@ -181,8 +186,28 @@ body {
     padding-top: 1rem;
     text-align: center;
     font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+.title{
+    font-size: 1.5rem;
+    text-align: center;
 }
 
+.project-div{
+    display: flex;
+    background-color: rgb(180, 221, 255);
+    padding: 0.3rem;
+    flex-direction: column;
+}
+.tecnologies-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo{
+    height: 2rem;
+}
 /* 
 
 .title {
