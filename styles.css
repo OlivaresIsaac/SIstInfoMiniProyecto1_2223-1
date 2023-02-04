@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: rgb(37, 35, 35);
+    background-color: rgb(225, 227, 255);
     font-family: 'Roboto', sans-serif;
     font-size:100%;
 
@@ -24,17 +24,22 @@ body {
 @media (min-width:960px) { html {font-size:40px;} }
 @media (min-width:1100px) { html {font-size:50px;} }
 
-/* .white-bold {
+ .white-bold {
     color: #FFFFFF;
+    font-weight: 700;
+    
+}
+.black-bold {
+    color: #000000;
     font-weight: 700;
     font-style: normal;
 }
 
+
 .white-light {
     color: #FFFFFF;
     font-weight: 400;
-    font-style: normal;
-} */
+} 
 
 .navbar-div{
     background-color: #3c5f8d;
@@ -43,13 +48,15 @@ body {
     top: 0;
     flex-direction: row;
     justify-content: flex-end;
+    z-index: 10;
 
 }
 
 .main-section-div{
     height: 15rem;
+    padding-top: 1.1rem;
     width: 100%;
-    background-color: rgb(214, 155, 201);
+    background-color: rgb(225, 227, 255);
 }
 
 .navbar-div a {
@@ -68,7 +75,7 @@ body {
   }
   
   .navbar-div a.active {
-    background-color: #aa2b04;
+    background-color: #ff4d17;
     color: white;
   }
 
@@ -104,10 +111,6 @@ body {
     
   }
 
-  /* .hero-container {
-    max-width: 100%;
-    margin: auto;
-  } */
 
 .slides{
     display: none;
@@ -116,16 +119,18 @@ body {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 8.5rem;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
+    margin-top: -0.5rem;
+    padding: 0.4rem;
+    color: rgb(250, 250, 250);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 0.5rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: #3c5f8d;
+    z-index: 1;
 }
 
 .next {
@@ -134,10 +139,10 @@ body {
   }
   
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #ff4d17;
   }
 
-  .fade {
+   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -145,19 +150,19 @@ body {
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
+  } 
 
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 0.5rem;
-    padding: 8px 12px;
-    position: relative;
-    top: 0;
-  }
 
   .responsive-img {
     max-width: 100%;
     height: auto;
+  }
+  .caption-div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
 /* 

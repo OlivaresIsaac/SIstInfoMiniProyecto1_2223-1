@@ -1,5 +1,5 @@
 const homeHero = document.getElementById('home')
-const slideCaptions = ["Isaac Olivares", "Ducks! (2022) Disponible en Googleplay", "Isaac Olivares", "HighIQGames"]
+const slideCaptions = ["Isaac Olivares", "Ducks!", "Isaac Olivares", "HighIQGames"]
 
 let currentSlideIndex = 0
 
@@ -9,13 +9,13 @@ nextSlide(0)
 function addSlidesIntoHero(){
     // assets\hero2.jpg
     for (let i=1;i<= slideCaptions.length;i++) {
-        console.log(i)
-        console.log(`assets/hero${i}`)
         slideHtml = `
-        <div class="slides fade">
-        <div class="numbertext">${i} / 4</div>
-        <img class="responsive-img" src="assets/hero${i}.jpg" >
-        <div class="text">${slideCaptions[i-1]}</div>
+        <div class="slides">
+        <img class="responsive-img fade" src="assets/hero${i}.jpg" >
+        <div class="caption-div black-bold">
+        <div >${slideCaptions[i-1]}</div>
+        <div >${i}/4</div>
+        </div>
       </div>
         `
         homeHero.innerHTML +=slideHtml
