@@ -177,11 +177,29 @@
         </div>
         
     </div>
-    <div class="main-section-div" id="contact">
-        <p>soy contactme</p>
+    <div class="main-section-div contact-div" id="contact">
+        
+        <p class="contact-title black-bold">Contacto</p>
+
+        <div class="contact-box">
+            <form class="form-box form-text" onsubmit="return false"> 
+        
+                <input type="text" id="name" name="name" class="form-input" placeholder="Escriba aqui su nombre" autocomplete="off" required>
+                <input type="text" id="email" name="email" class="form-input" placeholder="Escriba aqui su dirección de email" autocomplete="off" required>
+                <textarea rows="4" cols="50" id="msj" name="msj" class="form-input normal-black" placeholder="Escriba aqui su mensaje" required></textarea>
+                <input type="submit" value="Enviar" onclick="validateForm()" class="form-input">
+            </form>
+
+            <div class="form-box normal-black">
+                    <div class="inner-about-div"> 
+                        <i class="fa-solid fa-person fa-2xl list-icon" alt=""></i>
+                        <p>Isaac José Olivares Arenas 
+                    </div>
+            </div>
+        </div>
     </div>
 
-
+    
 
 
     <script src="https://kit.fontawesome.com/87671e9574.js" crossorigin="anonymous"></script>

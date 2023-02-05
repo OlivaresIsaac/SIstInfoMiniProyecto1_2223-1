@@ -1,5 +1,8 @@
 const homeHero = document.getElementById('home')
 const skillDiv = document.getElementById('skillDiv')
+const formName = document.getElementById('name')
+const formEmail = document.getElementById('email')
+const formMsj = document.getElementById('msj')
 const slideCaptions = ["Isaac Olivares", "Ducks!", "Isaac Olivares", "HighIQGames"]
 
 const skills = [
@@ -13,6 +16,7 @@ const skills = [
     {name: "sql", skillAmount: 60},
     {name: "c#", skillAmount: 75},
     {name: "java", skillAmount: 80},
+    {name: "flutter", skillAmount: 50}
 ]
 
 
@@ -91,7 +95,6 @@ function addSkillsToHtml(){
         } else {
             classCSS += "-good"
         }
-        console.log(classCSS)
 
         const skillHtml = `
         <div class="skill">
@@ -107,4 +110,13 @@ function blockSlider(slider, originalValue){
     slider.value = originalValue    
 }
 
-/* <div class="about-div"><p>0</p><p>100</p></div> */
+function  validateForm(){
+    const regexNotEmpty = /(.|\s)*\S(.|\s)*/
+    const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+    const name = formName.value
+    const email = formEmail.value
+    const msj = formMsj.value
+    
+    const validForm = regexNotEmpty.test(formName.value) && regexEmail.test(email) && regexNotEmpty.test(msj)
+    console.log(name, email, msj, validForm)
+}

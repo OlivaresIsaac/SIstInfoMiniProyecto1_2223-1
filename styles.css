@@ -293,9 +293,6 @@ body {
     text-align: center;
     width: 4rem;
 }
-/* .skill-slider{
-    accent-color: #1abd0b;
-} */
 
 .skill-slider-medium{
     accent-color: #f1b023;
@@ -308,82 +305,68 @@ body {
     accent-color: #15ff00;
 } 
 
+.contact-div{
+    background-image: url("assets/contact-background-mobile.png") ;
+    background-color: none;
 
-/* .icon{
-    width: 5rem;
-    height: auto;
-} */
+}
 
-
-/* 
-
-.title {
-    position: absolute;
+.contact-title{
     font-size: 1.5rem;
-    width: 15rem;
-    height: 5rem;
-   
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);;
+    padding-top: 5rem;
  
-    line-height: 1.5rem;
     text-align: center;
-    padding-bottom: 1rem;
-
 }
 
-.subtitle {
-    position: absolute;
-    font-size: 0.8rem;
-    width: 10rem;
-    height: 3rem;
-
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -50%);;
-
-   
-    line-height: 23px;
-    text-align: center;
-
+.contact-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.div-input {
-    position: absolute;
-    
-    
-    font-size: 0.8rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    width: 10rem;
-}
-
-.input {
-    height: 0.8rem;
-    width: 5rem;
-    margin-right: 0.2rem;
-    padding: 0.1rem;
-    margin-left: 0.2rem;
-}
-.button {
-    width: 2rem;
-    height: 0.8rem;
-}
-
-.div-results{
-    position: absolute;
-    display: flex; 
-    
-    font-size: 0.8rem;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    align-items: center;
-    width: 10rem;
-    height: 8rem;
+.form-box {
+    display: flex;
     flex-direction: column;
-   
-} */
+    justify-content: space-around;
+    width: 10rem;
+    height: 7rem;
+}
+
+.form-input {
+    padding: 0.2rem;
+    border-radius: 12px;
+    border-width: 1px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.form-text{
+    font-size: 0.4rem;
+    font-weight: lighter;
+    font-style: none;
+    text-align: justify;
+    padding: 1rem;
+    color: #f05959;
+}
+
+
+
+@media (min-width: 640px) {
+    .contact-div{
+        background-image: url("assets/contact-background.png") ;
+        background-color: none;
+       
+    }
+    .contact-title{
+        text-align: start;
+        padding-left: 2rem;
+    }
+}
+@media(min-width: 1441px){
+    .contact-div{
+        background-image: none;
+        background-color: rgb(225, 227, 255);
+    }
+}
+
