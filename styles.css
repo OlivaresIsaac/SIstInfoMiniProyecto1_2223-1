@@ -47,7 +47,7 @@ body {
 }
 
 .normal-white{
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     font-weight: 100;
     text-align: justify;
     padding: 1rem;
@@ -241,8 +241,8 @@ body {
 
 .about-div{
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: flex-start;
+    width: auto;
     
 }
 
@@ -252,21 +252,22 @@ body {
 }
 
 .about-img {
-    width: 8rem;
+    width: 5rem;
     height: auto;
     border-radius: 20px;
+    padding-left: 0.5rem;
 }
 
 .inner-about-div {
     display: flex;
     height: 2rem;
-    width: 8rem;
+    width: 2rem;
     align-items: center;
     justify-content: flex-start;
 }
 
 .list-icon {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 /* .icon{
     width: 5rem;
