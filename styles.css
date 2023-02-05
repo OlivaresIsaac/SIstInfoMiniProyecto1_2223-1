@@ -46,6 +46,14 @@ body {
     padding: 1rem;
 }
 
+.normal-white{
+    font-size: 0.5rem;
+    font-weight: 100;
+    text-align: justify;
+    padding: 1rem;
+    color: white;
+}
+
 
 .white-light {
     color: #FFFFFF;
@@ -71,7 +79,7 @@ body {
 }
 
 .main-section-odd{
-    background-color: #71408d;
+    background-color: #001b3f;
 }
 
 .navbar-div a {
@@ -230,6 +238,42 @@ body {
     height: auto;
     align-self: center;
 }
+
+.about-div{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.about-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img {
+    width: 8rem;
+    height: auto;
+    border-radius: 20px;
+}
+
+.inner-about-div {
+    display: flex;
+    height: 2rem;
+    width: 8rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.list-icon {
+    padding-right: 1rem;
+}
+/* .icon{
+    width: 5rem;
+    height: auto;
+} */
+
+
 /* 
 
 .title {
