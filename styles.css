@@ -293,20 +293,20 @@ body {
     text-align: center;
     width: 4rem;
 }
-.skill-slider{
+/* .skill-slider{
     accent-color: #1abd0b;
-}
+} */
 
-.skill-slider:disabled{
-    /* appearance: none; */
-    
-    accent-color: #00ff15;
-    background-color: red;
-}
+.skill-slider-medium{
+    accent-color: #f1b023;
+} 
 
-.skill-slider:disabled::-moz-range-progress{
-    background-color: #00ff15;
-}
+.skill-slider-average{
+    accent-color: #d9ff00;
+} 
+.skill-slider-good{
+    accent-color: #15ff00;
+} 
 
 
 /* .icon{

@@ -11,7 +11,7 @@ const skills = [
     {name: "python", skillAmount: 90},
     {name: "firebase", skillAmount: 70},
     {name: "sql", skillAmount: 60},
-    {name: "csharph", skillAmount: 75},
+    {name: "c#", skillAmount: 75},
     {name: "java", skillAmount: 80},
 ]
 
@@ -82,14 +82,29 @@ function showResponsiveNavBar(){
 
 function addSkillsToHtml(){
     for(let i = 0; i<skills.length; i++) {
+        let classCSS = 'skill-slider'
+        
+        if (skills[i].skillAmount <= 60){
+            classCSS += "-medium"
+        } else if (skills[i].skillAmount <= 80){
+            classCSS += "-average"
+        } else {
+            classCSS += "-good"
+        }
+        console.log(classCSS)
+
         const skillHtml = `
         <div class="skill">
         <p>${skills[i].name.toUpperCase()}</p>
-        <input type="range" min="1" max="100" value="${skills[i].skillAmount}" class="skill-slider" disabled=false>
+        <input type="range" min="1" max="100" value="${skills[i].skillAmount}" class="${classCSS}" onchange="blockSlider(this, ${skills[i].skillAmount})">
     
         </div>` 
     skillDiv.innerHTML += skillHtml
     }
    
 }
-{/* <div class="about-div"><p>0</p><p>100</p></div> */}
+function blockSlider(slider, originalValue){
+    slider.value = originalValue    
+}
+
+/* <div class="about-div"><p>0</p><p>100</p></div> */
