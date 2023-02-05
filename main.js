@@ -84,6 +84,7 @@ function showResponsiveNavBar(){
     }
 }
 
+
 function addSkillsToHtml(){
     for(let i = 0; i<skills.length; i++) {
         let classCSS = 'skill-slider'
