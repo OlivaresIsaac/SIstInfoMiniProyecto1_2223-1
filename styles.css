@@ -277,6 +277,38 @@ body {
 .list-icon {
     padding-right: 0.5rem;
 }
+
+.skill-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill{
+
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    width: 4rem;
+}
+.skill-slider{
+    accent-color: #1abd0b;
+}
+
+.skill-slider:disabled{
+    /* appearance: none; */
+    
+    accent-color: #00ff15;
+    background-color: red;
+}
+
+.skill-slider:disabled::-moz-range-progress{
+    background-color: #00ff15;
+}
+
+
 /* .icon{
     width: 5rem;
     height: auto;

@@ -1,16 +1,33 @@
 const homeHero = document.getElementById('home')
+const skillDiv = document.getElementById('skillDiv')
 const slideCaptions = ["Isaac Olivares", "Ducks!", "Isaac Olivares", "HighIQGames"]
+
+const skills = [
+    {name: "html", skillAmount: 60},
+    {name: "css", skillAmount: 50},
+    {name: "javascript", skillAmount: 60},
+    {name: "typescript", skillAmount: 90},
+    {name: "angular", skillAmount: 100},
+    {name: "python", skillAmount: 90},
+    {name: "firebase", skillAmount: 70},
+    {name: "sql", skillAmount: 60},
+    {name: "csharph", skillAmount: 75},
+    {name: "java", skillAmount: 80},
+]
+
 
 let currentSlideIndex = 0
 
+
 addSlidesIntoHero()
-nextSlide(0)
+nextSlide(0)    
+addSkillsToHtml()
 setInterval(nextSlide, 10000, 1)
 
 function addSlidesIntoHero(){
     // assets\hero2.jpg
     for (let i=1;i<= slideCaptions.length;i++) {
-        slideHtml = `
+        const slideHtml = `
         <div class="slides">
         <img class="responsive-img fade" src="assets/hero${i}.jpg" >
         <div class="caption-div white-bold">
@@ -62,3 +79,17 @@ function showResponsiveNavBar(){
         navbar.className = "navbar-div";
     }
 }
+
+function addSkillsToHtml(){
+    for(let i = 0; i<skills.length; i++) {
+        const skillHtml = `
+        <div class="skill">
+        <p>${skills[i].name.toUpperCase()}</p>
+        <input type="range" min="1" max="100" value="${skills[i].skillAmount}" class="skill-slider" disabled=false>
+    
+        </div>` 
+    skillDiv.innerHTML += skillHtml
+    }
+   
+}
+{/* <div class="about-div"><p>0</p><p>100</p></div> */}
