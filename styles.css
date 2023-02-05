@@ -135,6 +135,7 @@ body {
   }
 
 
+
 .slides{
     display: none;
 }
@@ -224,7 +225,7 @@ body {
 }
 
 .logo{
-    height: 2rem;
+    height: 1.5rem;
     padding: .1rem;
 }
 
@@ -241,29 +242,36 @@ body {
 
 .about-div{
     display: flex;
-    justify-content: flex-start;
-    width: auto;
-    
+    justify-content: space-evenly;
+    padding-right: 0;
 }
 
 .about-column {
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .about-img {
     width: 5rem;
     height: auto;
     border-radius: 20px;
-    padding-left: 0.5rem;
+   
+}
+@media (min-width: 640px) {
+    .about-img{
+        width: 6rem;
+    }
+    
 }
 
 .inner-about-div {
     display: flex;
     height: 2rem;
-    width: 2rem;
+    width: 6rem;
     align-items: center;
     justify-content: flex-start;
+    overflow: hidden;
 }
 
 .list-icon {
