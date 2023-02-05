@@ -349,12 +349,6 @@ body {
     color: #f05959;
 }
 
-.email-div{
-
-}
-
-
-
 @media (min-width: 640px) {
     .contact-div{
         background-image: url("assets/contact-background.png") ;
