@@ -117,6 +117,37 @@ function  validateForm(){
     const email = formEmail.value
     const msj = formMsj.value
     
-    const validForm = regexNotEmpty.test(formName.value) && regexEmail.test(email) && regexNotEmpty.test(msj)
-    console.log(name, email, msj, validForm)
+    const validForm = regexNotEmpty.test(name) && regexEmail.test(email) && regexNotEmpty.test(msj)
+    if (validForm) {
+        const confirmMsj = `
+Gracias por contactarme!
+Se enviaron los siguientes datos
+Nombre: ${name}
+Email: ${email}
+Mensaje: ${msj}`
+
+        alert(confirmMsj)
+
+        formName.value=''
+        formEmail.value=''
+        formMsj.value=''
+        
+    } else {
+        let errorMsj=""
+        if (!regexNotEmpty.test(name)){
+            errorMsj+=`El nombre "${name}" es inválido\n`
+        }
+      
+        if (!regexEmail.test(email)){
+            errorMsj+=`El email "${email}" es inválido\n`
+        }
+       
+        if (!regexNotEmpty.test(msj)){
+            errorMsj+=`El mensaje "${msj}" es inválido\n`
+        }
+
+        errorMsj+="Por favor corrija los campos inválidos y vuelva a intentarlo"
+        alert(errorMsj)
+       
+    }
 }
